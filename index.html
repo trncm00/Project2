@@ -2,53 +2,57 @@
 <html lang="en">
 
 <head>
-	
-	
-	
+
+
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
+
 	<link rel="stylesheet" href="project2/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oldenburg|Roboto&display=swap" rel="stylesheet">
-<!-- page style-->
-	
+	<!-- page style-->
+
 	<style>
-	
-		dates
-{min-width:50px; }
+		dates {
+			min-width: 50px;
+		}
 
 
 
 		@import url('https://fonts.googleapis.com/css?family=Oldenburg|Roboto&display=swap');
-		
-/*
+
+		/*
 font-family: 'Oldenburg', cursive;
 font-family: 'Roboto', sans-serif;*/
 
+.mediaSize{height:20em;
+width:20em;}
 
-	
 
+		mySize {
+			min-width: 20%;
+			max-width: 50%;
+			min-height: inherit;
+			max-height: inherit;
+		}
 
-		mySize{
-	min-width:20%;
-	max-width:50%;
-	min-height:inherit;
-	max-height: inherit;
-}
-		nav,jumbotron{
-	font-family: 'Oldenburg', cursive;
-	
-}
-		
-		p{
-			font-family:'Roboto',sans-serif;
+		nav,card-title,div
+		 {
+			font-family: 'Oldenburg', cursive;
+
 		}
 
 		
+		 
+
+		
+		p,lead {
+			font-family: 'Roboto', sans-serif;
+		}
 	</style>
 	<title>Project 2</title>
 </head>
@@ -89,9 +93,9 @@ Photo by Kira Schwarz from Pexels
 	</nav>
 	<!-- Hero image, with centered text, maybe it shouldbe  ragged right-->
 
-	
-<!--	commented out jumbotrons-->
-<!--
+
+	<!--	commented out jumbotrons-->
+	<!--
 		<div class="jumbotron">
 					<h1 class="display-4"> Hello, world!</h1>
 					<p class="lead oldT">this is a simple hero unit</p>
@@ -110,17 +114,23 @@ Photo by Kira Schwarz from Pexels
 				</div>
 			</div>
 -->
-	
+
 	<div class="jumbotron jumbotron-fluid herojumbo ">
 		<div class="card"><img style="" class="card-img" src="images/heroa.jpg" alt="">
 			<div class=" card-img-overlay text-white d-flex justify-content-left align-items-center">
-				<h2 class="card-title display-1 text-uppercase">Fabula</h2>
+				<h2 class="card-title display-1 text-uppercase" style= >Fabula</h2>
 				<br>
-				
-			
+
+
+				<div class="jumbotron jumbotron-fluid bg-transparent">
+
+					<h1 class="display-1 p-2"></h1>
+					<p class="lead display-3 p-3">Cafe and Performance Space</p>
+
+				</div>
 				<!--				cant get this line break to work-->
-<!--menus-->
-<!--
+				<!--menus-->
+				<!--
 				
 				<div class="container">
 					<div class="row">
@@ -130,26 +140,129 @@ Photo by Kira Schwarz from Pexels
 					</div>
 				</div>
 -->
-				
-					
-			<div class="jumbotron jumbotron-fluid bg-transparent">
-			<div class="container">
-				<h1 class="display-4"></h1>
-				<p class="lead">Cafe and Performance Space</p>
-				
-					</div>
-				</div>
-				
-				
-				</div>
-				
+
+
+
+
 			</div>
+
 		</div>
+	</div>
 	</div>
 	<!--//responsive,fixed width container(meaning its max-width changes at every breakpoint)
 	//fluid-width,meaning its 100 percent wide all the time
 -->
 	<!-- container -->
+
+
+	<div class="container">
+		<div class="row">
+
+			<!--Collapse Buttons-->
+			<div class="mx-auto col-12 p-3 m-3" style="">
+
+				<p>
+					<a class="btn btn-outline-light text-dark m-1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Cafe Reviews</a>
+					<button class="btn btn-outline-light m-1 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Event Reviews &amp; Articles</button>
+				</p>
+
+			</div>
+			<!-- collapse body-->
+
+			<div class="row">
+				<div class="col">
+					<div class="collapse multi-collapse" id="multiCollapseExample1">
+						<div class="card card-body">
+							<!--I am going to see if I can put a frickinlist-based media object in this here card body -->
+
+							<!--Media objects-->
+
+							<ul class="list-unstyled col-12 bg-dark text-light p-1 m-2">
+								<li class="media">
+
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+									<!--placing the img html here pushes the image right-->
+									<img src="images/img3.jpg" class=" ml-3 mb-1 p-2 mediaSize" alt="">
+
+								</li>
+								<li class="media">
+									<img src="images/img3.jpg" class="mt-3 mb-1 p-2 mediaSize" alt="">
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+
+								</li>
+								<li class="media">
+
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+									<img src="images/img3.jpg" class="mt-3 mb-1 p-2 mediaSize" alt="">
+
+								</li>
+
+							</ul>
+							<!--end of media list object-->
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="collapse multi-collapse" id="multiCollapseExample2">
+						<div class="card card-body">
+							<!--Media objects-->
+							<ul class="list-unstyled col-12 bg-dark text-light p-1 m-2">
+								<li class="media">
+
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+									<!--placing the img html here pushes the image right-->
+									<img src="images/img1.jpg" class="ml-3 mb-1 p-2 mediaSize" alt="">
+
+								</li>
+								<li class="media">
+									<img src="images/img1.jpg" class="mt-3 mb-1 p-2 mediaSize" alt="">
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+
+								</li>
+								<li class="media">
+
+									<div class="media-body">
+										<h5 class="mt-3 mb-1 p-2 mediaSize"> list-based media object</h5>
+										<h5 class='ml-2'>media heading</h5>
+										cras sit amet nibh libero, in gravida nulla.
+									</div>
+									<img src="images/img1.jpg" class="mt-3 mb-1 p-2 mediaSize" alt="">
+
+								</li>
+
+							</ul>
+
+							<!--end of media l-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
 
 
 
@@ -246,16 +359,16 @@ Photo by Kira Schwarz from Pexels
 			</div>
 		</div>
 	</div>
-	
-	
-<!--	-->
-<!--	-->
-<!--	-->
-	
+
+
+	<!--	-->
+	<!--	-->
+	<!--	-->
+
 	<div class="container-fluid column" id="c1">
 		<div class="row">
 
-		
+
 
 
 			<div class="container">
@@ -326,7 +439,7 @@ Photo by Kira Schwarz from Pexels
 						</div>
 					</div>
 
-					<div class="col-sm-12 col-md-12 col-lg-6col-md-4 col-lg-6">
+					<div class="col-sm-12 col-md-12 col-lg-6 col-md-4 col-lg-6">
 						<div class="card">
 							<img class="card-img-top" src="images/img4.jpg">
 							<div class="card-body">
@@ -336,123 +449,23 @@ Photo by Kira Schwarz from Pexels
 								<h6 class="card-subtitle mb-2 text-muted">8:00am to 10:00am</h6>
 								<h6 class="card-text">May 18th, 2022</h6>
 							</div>
-							
-								<div style="clear:float"></div>
-							</div>
+
+							<div style="clear:float"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-<!--Collapse Buttons-->
-	<div class="mx-auto col-12 p-3 m-3" style="">
-	
-		<p>
-  <a class="btn btn-outline-light text-dark m-1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Cafe Reviews</a>
-  <button class="btn btn-outline-light m-1 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Event Reviews amp; Articles</button>
-</p>
-		
 	</div>
-<!-- collapse body-->
-	
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-<!--I am going to see if I can put a frickinlist-based media object in this here card body -->
-       
-		 <!--Media objects-->
-	
-	<ul class="list-unstyled col-4">
-	<li class="media">
-		
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-<!--placing the img html here pushes the image right-->
-		<img src ="images/img3.jpg" class="ml-3 mb-1 p-2 width-20%" alt="">
-		
-		</li>
-			<li class="media">
-		<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-				
-		</li>
-			<li class="media">
-	
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-					<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
-				
-		</li>
-		
-	</ul>
- <!--end of media list object-->
-		</div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-  <!--Media objects-->
-  <ul class="list-unstyled col-4">
-	<li class="media">
-		
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-<!--placing the img html here pushes the image right-->
-		<img src ="images/img3.jpg" class="ml-3 mb-1 p-2 width-20%" alt="">
-		
-		</li>
-			<li class="media">
-		<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-				
-		</li>
-			<li class="media">
-	
-		<div class="media-body">
-		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
-			<h5 class='ml-2'>media heading</h5>
-				cras sit amet nibh libero, in gravida nulla. 
-		</div>
-					<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
-				
-		</li>
-		
-	</ul>
-		  
-<!--end of media l-->
-      </div>
-    </div>
-  </div>
-</div>
-
-	
-	
-	
-<!--Media objects-->
 
 
-<!--
+
+
+	<!--Media objects-->
+
+
+	<!--
 	<ul class="list-unstyled col-4">
 	<li class="media">
 		
@@ -509,38 +522,36 @@ Photo by Kira Schwarz from Pexels
 
 
 	<script>
-	//60 minutes on this, several different approaches with google, jquery, w3
-			//realized i had placed the a variable in the increment part
-				//which was why it was only transforming the card text class on the first go
+		//60 minutes on this, several different approaches with google, jquery, w3
+		//realized i had placed the a variable in the increment part
+		//which was why it was only transforming the card text class on the first go
 
 		let a = document.getElementsByClassName("card-text");
 		let b = document.getElementsByClassName("card-title");
-				for(let i=0; i<a.length; i++){
-			a[i].style.color="hsla(328,82%,68%,0.61)";
-			a[i].style.backgroundColor="hsla(72,100%,62%,0.50)";
-			b[i].style.fontFamily="times new roman";
-			b[i].style.fontWeight="bold";
-						
-			} 
+		for (let i = 0; i < a.length; i++) {
+			a[i].style.color = "hsla(328,82%,68%,0.61)";
+			a[i].style.backgroundColor = "hsla(72,100%,62%,0.50)";
+			b[i].style.fontFamily = "times new roman";
+			b[i].style.fontWeight = "bold";
+
+		}
 		
+		//set up logic for opening and shutting those reviews
 	</script>
 
 
 	<script src="js/jquery.js">
-		
-//		$("card-text").each(function(index)){
-//							
-//							console.log( )
-//							
-//							}
-//							
-//							
-//							$(document).ready(function(){$("button").click(function(){
-//								$("#div1").fadeIn();
-//							}
-//						)})
-
-	
+		//		$("card-text").each(function(index)){
+		//							
+		//							console.log( )
+		//							
+		//							}
+		//							
+		//							
+		//							$(document).ready(function(){$("button").click(function(){
+		//								$("#div1").fadeIn();
+		//							}
+		//						)})
 	</script>
 	<script src="js/jquery-ui.js"></script>
 
