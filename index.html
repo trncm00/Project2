@@ -11,18 +11,44 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="project2/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oldenburg|Roboto&display=swap" rel="stylesheet">
 <!-- page style-->
 	
 	<style>
-	@media screen and (max-width:1140px)
-	{
-		.column{float:left;}
-		#c1{width:50%;}
-		#c2{width:50%;}
+	
+		dates
+{min-width:50px; }
+
+
+
+		@import url('https://fonts.googleapis.com/css?family=Oldenburg|Roboto&display=swap');
 		
+/*
+font-family: 'Oldenburg', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+
+	
+
+
+		mySize{
+	min-width:20%;
+	max-width:50%;
+	min-height:inherit;
+	max-height: inherit;
+}
+		nav,lead{
+	font-family: 'Oldenburg', cursive;
+	
+}
 		
+		p{
+			font-family:'Roboto',sans-serif;
 		}
+
+		
 	</style>
 	<title>Project 2</title>
 </head>
@@ -35,10 +61,10 @@ Photo by Kira Schwarz from Pexels
 -->
 
 	<!--Repo navbar seems fine to start with-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
 		<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
 
-		<img src="images/herob.jpg" width="200px" height="200px">
+		<img src="images/herob.jpg" width="10%" height="10%">
 		<a class="navbar-brand" href="#">Project 2</a>
 
 		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,25 +89,58 @@ Photo by Kira Schwarz from Pexels
 	</nav>
 	<!-- Hero image, with centered text, maybe it shouldbe  ragged right-->
 
-	<div class="jumbotron jumbotron-fluid herojumbo">
+<!--commented out jumbtrons	-->
+<!--
+	
+		<div class="jumbotron">
+					<h1 class="display-4"> Hello, world!</h1>
+					<p class="lead oldT">this is a simple hero unit</p>
+					<h4 class="my-4">
+						<p class="">it uses utility classes for typography</p>
+						<p class="lead">
+						<a class="btn btn-primary btn-lg" href="#" role="button">learn more</a>
+					</p>
+			<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4"></h1>
+				<p class="lead">this is a modified jumbotron that occupies the entire horizontal space</p>
+				<p class="lead">this would be good for any promise right?</p>
+				</div>
+			</div>
+		
+	
+	<div class="jumbotron jumbotron-fluid herojumbo ">
 		<div class="card"><img style="" class="card-img" src="images/heroa.jpg" alt="">
 			<div class=" card-img-overlay text-white d-flex justify-content-left align-items-center">
-				<h2 class="card-title display-2 text-uppercase">Hero</h2>
+				<h2 class="card-title display-1 text-uppercase">Fabula</h2>
 				<br>
+				
+-->
+			
 				<!--				cant get this line break to work-->
-				<p class="lead"></p>
-				
-				
 <!--menus-->
-				<div class="">
-				<div class="lead">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed libero et massa aliquam imperdiet non et urna. Etiam congue, magna suscipit sagittis auctor, sapien magna condimentum dui, ac interdum augue felis ut nunc. Nunc consequat posuere viverra. Nam varius lacus sed purus laoreet efficitur. Fusce rhoncus sed urna nec commodo. Aliquam molestie id neque eget ultrices. Duis tincidunt vel metus ac efficitur. Sed eu quam ut lacus sodales egestas. Aenean maximus laoreet dictum. Vivamus semper ante massa, vel malesuada sapien accumsan in. Vivamus ornare urna quis justo aliquam, eu pulvinar risus eleifend.
+<!--
 				
-				Pellentesque porttitor neque id mi venenatis, sed consectetur nibh vestibulum. Donec at ligula ac magna rutrum aliquet. Aliquam imperdiet sem vitae magna rutrum, pellentesque pharetra orci lacinia. Donec commodo magna ac sem suscipit, eu placerat est mollis. Morbi pharetra ex ut elit ultricies maximus. Sed sollicitudin suscipit quam, non fermentum eros vulputate id. Suspendisse vel imperdiet arcu, a porttitor leo. Vivamus nulla dui, consectetur at cursus ut, egestas ut arcu. Sed facilisis vehicula luctus. Aliquam velit nisi, elementum vitae accumsan in, lacinia vel leo. Nullam justo odio, dictum sed cursus accumsan, interdum et mauris. Etiam dictum eu neque sit amet vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sapien augue, vestibulum gravida mollis sed, aliquet in arcu. Donec aliquet id mauris in vulputate. Donec lectus metus, tempor a mollis vel, iaculis et dolor.
+				<div class="container">
+					<div class="row">
+						<div class="mySize text-wrap h-30 w-40 p-5 mb-3 lead">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed libero et massa aliquam imperdiet non et urna. Etiam congue, magna suscipit sagittis auctor, sapien magna condimentum dui, ac interdum augue felis ut nunc. Nunc consequat posuere viverra. Nam varius lacus sed purus laoreet efficitur. Fusce rhoncus sed urna nec commodo. Aliquam molestie id neque eget ultrices. Duis tincidunt vel metus ac efficitur. Sed eu quam ut lacus sodales egestas. Aenean maximus laoreet dictum. Vivamus semper ante massa, vel malesuada sapien accumsan in. Vivamus ornare urna quis justo aliquam, eu pulvinar risus eleifend.
+						</div>
+					</div>
+				</div>
+-->
+				
+					
+			<div class="jumbotron jumbotron-fluid bg-transparent">
+			<div class="container">
+				<h1 class="display-4"></h1>
+				<p class="lead">Cafe and Performance Space</p>
+				
 					</div>
 				</div>
 				
 				
+				</div>
 				
 			</div>
 		</div>
@@ -273,22 +332,160 @@ Photo by Kira Schwarz from Pexels
 
 								<h5 class="card-title
 													   ">Pour-Over &amp; Espresso Workshop</h5>
-								<h6 class="card-subtitle mb-2 text-muted ">8:00am to 10:00am</h6>
-								<h6 class="card-text ">May 18th, 2022</h6>
+								<h6 class="card-subtitle mb-2 text-muted">8:00am to 10:00am</h6>
+								<h6 class="card-text">May 18th, 2022</h6>
+							</div>
 							
 								<div style="clear:float"></div>
 							</div>
 						</div>
 					</div>
-
-
 				</div>
-
 			</div>
 		</div>
 	</div>
 
+<!--Collapse Buttons-->
+	<div class="mx-auto col-12 p-3 m-3" style="">
+	
+		<p>
+  <a class="btn btn-outline-light text-dark m-1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Cafe Reviews</a>
+  <button class="btn btn-outline-light m-1 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Event Reviews amp; Articles</button>
+</p>
+		
+	</div>
+<!-- collapse body-->
+	
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+<!--I am going to see if I can put a frickinlist-based media object in this here card body -->
+       
+		 <!--Media objects-->
+	
+	<ul class="list-unstyled col-4">
+	<li class="media">
+		
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+<!--placing the img html here pushes the image right-->
+		<img src ="images/img3.jpg" class="ml-3 mb-1 p-2 width-20%" alt="">
+		
+		</li>
+			<li class="media">
+		<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+				
+		</li>
+			<li class="media">
+	
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+					<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+				
+		</li>
+		
+	</ul>
+ <!--end of media list object-->
+		</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+  <!--Media objects-->
+  <ul class="list-unstyled col-4">
+	<li class="media">
+		
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+<!--placing the img html here pushes the image right-->
+		<img src ="images/img3.jpg" class="ml-3 mb-1 p-2 width-20%" alt="">
+		
+		</li>
+			<li class="media">
+		<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+				
+		</li>
+			<li class="media">
+	
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+					<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+				
+		</li>
+		
+	</ul>
+		  
+<!--end of media l-->
+      </div>
+    </div>
+  </div>
+</div>
 
+	
+	
+	
+<!--Media objects-->
+
+
+<!--
+	<ul class="list-unstyled col-4">
+	<li class="media">
+		
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+
+		<img src ="images/img3.jpg" class="ml-3 mb-1 p-2 width-20%" alt="">
+		
+		</li>
+			<li class="media">
+		<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+				
+		</li>
+			<li class="media">
+	
+		<div class="media-body">
+		<h5 class="mt-3 mb-1 p-2"> list-based media object</h5>
+			<h5 class='ml-2'>media heading</h5>
+				cras sit amet nibh libero, in gravida nulla. 
+		</div>
+					<img src ="images/img3.jpg" class="mt-3 mb-1 p-2" alt="">
+				
+		</li>
+		
+	</ul>
+-->
 	<!-- api google maps, i found that Google Cloud Platform is 
 	weird and I am not sure I want to start a project with them to get an API key for the fabula address-->
 
@@ -313,15 +510,15 @@ Photo by Kira Schwarz from Pexels
 	<script>
 	//60 minutes on this, several different approaches with google, jquery, w3
 			//realized i had placed the a variable in the increment part
-				//which was why it was only transforming the card text class
+				//which was why it was only transforming the card text class on the first go
 
 		let a = document.getElementsByClassName("card-text");
-		let b= document.getElementsByClassName("card-title");
+		let b = document.getElementsByClassName("card-title");
 				for(let i=0; i<a.length; i++){
-				a[i].style.color="hsla(328,82%,68%,0.61)";
-				a[i].style.backgroundColor="hsla(72,100%,62%,0.50)";
-				b[i].style.fontFamily="times new roman";
-				b[i].style.fontWeight="bold";
+			a[i].style.color="hsla(328,82%,68%,0.61)";
+			a[i].style.backgroundColor="hsla(72,100%,62%,0.50)";
+			b[i].style.fontFamily="times new roman";
+			b[i].style.fontWeight="bold";
 						
 			} 
 		
